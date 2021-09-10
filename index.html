@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sito Noticias Tecnologicas Git</title>
+  <!-- Relacionar con Google Fonts -->
+  <!--
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- enlace a un personalizado style.CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Div para Definir icono en un boton para inicio del Menu para modo Responsive -->
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+
+  <!-- Definir clase Container que contendra todo el Navigation Menu -->
+  <div class="container">
+    <!-- Todas las opciones de Navigation -->
+    <nav class="nav-main">
+      <!-- Definimos un Brand y que imagen para la seccion de Navigation -->
+      <img src="img/brand.png" alt="TechNews Logo" class="nav-brand">
+      <!-- Left Nav OPCIONES DE NAVEGACION CON UL e LI -->
+      <ul class="nav-menu">
+        <li>
+          <a href="#">Web Development</a>
+        </li>
+        <li>
+          <a href="#">Blockchain</a>
+        </li>
+        <li>
+          <a href="#">Machine Learning</a>
+        </li>
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        <li>
+          <a href="#">Quantum Computing</a>
+        </li>
+        <li>
+          <a href="#">Startup</a>
+        </li>
+        <li>
+          <a href="#">Cryptocurrencies</a>
+        </li>
+        <li>
+          <a href="#">More</a>
+        </li>
+      </ul>
+
+      <!-- Ul CON UN SOLO ELEMENTO LI-->
+      <ul class="nav-menu-right">
+        <li>
+          <a href="#">
+            <!-- Definir icono en un boton para final a la derecha del Menu de Navigation -->
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <hr>  <!-- COLOCARA UNA LINEA EN BLANCO DEBAJO DE LA NAVEGACION -->
+
+
+
+    <!-- SHOWCASE sera el Header, es la parte de la imagen principal que desplegara la noticia -->
+    <!-- SHOWCASE esta clase la estilizamos desde el styles.css, para alto e imagen de fondo -->
+    <header class="showcase">
+      <h2>Big News Today!</h2>
+      <p>La gran noticia de hoy, es la alza prominente que estan teniendo las acciones de grandes empresas
+         tecnologicas como Facebook, Amazon, Microsoft, Apple en la medida que cada uno de ellos en su ambito
+         ha desplegado nuevas herramientas!
+      </p>
+      <!-- A este boton Read More le agregamos el icono > al final del texto -->
+      <a href="#" class="btn">
+        Read More <i class="fas fa-chevron-right"></i>
+      </a>
+    </header>
+
+
+    <!-- NEWS CARDS es la seccion debajo de Showcase, esta compuesta por una tarjeta Div principal
+         con 4 div internos, uno para cada subseccion todo con CSS GRID, esta clase News-Card
+         es estilizada en Styles.css que le indicara sus tamaños y reglas de cada bloque  -->
+
+    <div class="news-cards">
+      <!-- Imagen del 1er Div con sus Titulos, parrafos e Iconos al final -->
+      <div>
+        <img src="img/news1.jpg" alt="" />
+        <h3>FACEBOOK</h3>
+        <p>Facebook siguio impresionando con su monopolio en todo lo relaciona a RedSocial al adquirir
+           no solo a Whatsapp, sino tambien a Instagram y Pintarest, con esto y ahora abarcando el mundo
+           ecommerce con Whatsapp y Facebook Bussines ademas de Analytics y Ads!
+        </p>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      
+      <!-- Imagen del 2do Div con sus Titulos, parrafos e Iconos al final -->
+      <div>
+        <img src="img/news2.jpg" alt="" />
+        <h3>AMAZON</h3>
+        <p>Facebook siguio impresionando con su monopolio en todo lo relaciona a RedSocial al adquirir
+          no solo a Whatsapp, sino tambien a Instagram y Pintarest, con esto y ahora abarcando el mundo
+          ecommerce con Whatsapp y Facebook Bussines ademas de Analytics y Ads!
+        </p>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      
+      <!-- Imagen del 3er Div con sus Titulos, parrafos e Iconos al final -->
+      <div>
+        <img src="img/news3.jpg" alt="" />
+        <h3>MICROSOFT</h3>
+        <p>Facebook siguio impresionando con su monopolio en todo lo relaciona a RedSocial al adquirir
+          no solo a Whatsapp, sino tambien a Instagram y Pintarest, con esto y ahora abarcando el mundo
+          ecommerce con Whatsapp y Facebook Bussines ademas de Analytics y Ads!
+        </p>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      
+      <!-- Imagen del 4to Div con sus Titulos, parrafos e Iconos al final -->
+      <div>
+        <img src="img/news4.jpg" alt="" />
+        <h3>APPLE</h3>
+        <p>Facebook siguio impresionando con su monopolio en todo lo relaciona a RedSocial al adquirir
+          no solo a Whatsapp, sino tambien a Instagram y Pintarest, con esto y ahora abarcando el mundo
+          ecommerce con Whatsapp y Facebook Bussines ademas de Analytics y Ads!
+        </p>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+      </div>
+
+    </div>
+
+
+
+    <!-- Card Banner 1 Seccion completa bajo el Showcase -->
+    <!-- las clases Card-Banner-one y content se estilizan desde styles, para agregar un patron de 
+         fondo -->
+    <section class="cards-banner-one">
+      <div class="content">
+        <h2>Los Grandes del Hardware</h2>
+        <!-- lorem 20 -->
+        <p>Al final y cabo lo que la mayoria de loas maravillas de software actuales pueden hacer
+          se debe gracias a toda la innovaccion en Hardware que han realizado grandes monstruos como
+          Intel y AMD que ha permitido tener cada dia maquinas mas poderosas, y el terreno de los Smart
+          Phones tiene a SNAPDRAGON comandando!
+        </p>
+        <a href="#" class="btn">Learn More<i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Repite NEWS CARDS debajo de Card Banner 1, esta compuesta por una tarjeta Div principal
+         con 4 div internos, uno para cada subseccion todo con CSS GRID, esta clase News-Card
+         es estilizada en Styles.css que le indicara sus tamaños y reglas de cada bloque  -->
+    <div class="news-cards">
+      <div>
+        <img src="img/news1.jpg" alt="" />
+        <h3>INTEL</h3>
+        <p>Facebook siguio impresionando con su monopolio en todo lo relaciona a RedSocial al adquirir
+          no solo a Whatsapp, sino tambien a Instagram y Pintarest, con esto y ahora abarcando el mundo
+          ecommerce con Whatsapp y Facebook Bussines ademas de Analytics y Ads!
+        </p>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news2.jpg" alt="" />
+        <h3>AMD</h3>
+        <p>Facebook siguio impresionando con su monopolio en todo lo relaciona a RedSocial al adquirir
+          no solo a Whatsapp, sino tambien a Instagram y Pintarest, con esto y ahora abarcando el mundo
+          ecommerce con Whatsapp y Facebook Bussines ademas de Analytics y Ads!
+        </p>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news3.jpg" alt="" />
+        <h3>SNAPDRAGON</h3>
+        <p>Facebook siguio impresionando con su monopolio en todo lo relaciona a RedSocial al adquirir
+          no solo a Whatsapp, sino tambien a Instagram y Pintarest, con esto y ahora abarcando el mundo
+          ecommerce con Whatsapp y Facebook Bussines ademas de Analytics y Ads!
+        </p>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+      </div>
+      <div>
+        <img src="img/news4.jpg" alt="" />
+        <h3>DELL</h3>
+        <p>Facebook siguio impresionando con su monopolio en todo lo relaciona a RedSocial al adquirir
+          no solo a Whatsapp, sino tambien a Instagram y Pintarest, con esto y ahora abarcando el mundo
+          ecommerce con Whatsapp y Facebook Bussines ademas de Analytics y Ads!
+        </p>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+      </div>
+    </div>
+
+
+    <!-- third card -->
+    <!-- Card Banner 2 Seccion completa bajo el 2DO BLOQUE DE NEWSCARD CSS GRID -->
+    <!-- las clases Card-Banner-TWO y content se estilizan desde styles, para agregar un fondo -->
+    <section class="cards-banner-two">
+      <div class="content">
+        <h2>Y que depara el futuro</h2>
+        <!-- lorem 30 -->
+        <p>Los Nuevos conceptos que avanzan en esta Transformacion Digital IA, Machine Learning,
+           Big Data, la IoT son cambios que no podremos detener en el inexorable avance a una 
+           sociedad informatizada y robotizada, ademas de hiperconectada
+        </p>
+        <a href="#" class="btn">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Follow  Section con los Iconos de Redes sociales con acceso a sus paginas principales-->
+    <section class="social">
+      <p>Follow TechNews</p>
+      <div class="links">
+        <a href="https://facebook.com">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkdin.com">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Links una seccion de Footer con UL Y SUS RESCPECTIVOS LI -->
+  <div class="footer-links">
+    <div class="footer-container">
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Title One</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">Blockchain</a>
+        </li>
+        <li>
+          <a href="#">Machine Learning</a>
+        </li>
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        <li>
+          <a href="#">Quantum Computing</a>
+        </li>
+        <li>
+          <a href="#">Startup</a>
+        </li>
+        <li>
+          <a href="#">Cryptocurrencies</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Title Two</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">Blockchain</a>
+        </li>
+        <li>
+          <a href="#">Machine Learning</a>
+        </li>
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        <li>
+          <a href="#">Quantum Computing</a>
+        </li>
+        <li>
+          <a href="#">Startup</a>
+        </li>
+        <li>
+          <a href="#">Cryptocurrencies</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Title Three</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">Blockchain</a>
+        </li>
+        <li>
+          <a href="#">Machine Learning</a>
+        </li>
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        <li>
+          <a href="#">Quantum Computing</a>
+        </li>
+        <li>
+          <a href="#">Startup</a>
+        </li>
+        <li>
+          <a href="#">Cryptocurrencies</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <h3>Title Four</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">Blockchain</a>
+        </li>
+        <li>
+          <a href="#">Machine Learning</a>
+        </li>
+        <li>
+          <a href="#">Artificial Intelligence</a>
+        </li>
+        <li>
+          <a href="#">Quantum Computing</a>
+        </li>
+        <li>
+          <a href="#">Startup</a>
+        </li>
+        <li>
+          <a href="#">Cryptocurrencies</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>Tech News BY TOTEVE Copyright 2021</h3>
+  </footer>
+
+  <!-- Scroll Reveal  LLAMADA A LOS SCRIPTS DE SCROLL REVEAL Y AL MAIN.JS DEL PROYECTO -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
