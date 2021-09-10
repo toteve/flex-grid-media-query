@@ -1,0 +1,347 @@
+/* Global Estilos para resetear */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* la regla de familia tambien la puede pegar del sitio original de Oswald */
+  font-family: "Oswald", sans-serif; 
+  /* background-color: #000000; */
+  /* Pattern from https://www.heropatterns.com/ */
+  /* Definir imagen principal global de fondo usando un pattern o patron de CSS usando la web indicada arriba */
+  /*
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  */
+  background-color: #121213;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' viewBox='0 0 88 88'%3E%3Cg fill='%2358565a' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M29.42 29.41c.36-.36.58-.85.58-1.4V0h-4v26H0v4h28c.55 0 1.05-.22 1.41-.58h.01zm0 29.18c.36.36.58.86.58 1.4V88h-4V62H0v-4h28c.56 0 1.05.22 1.41.58zm29.16 0c-.36.36-.58.85-.58 1.4V88h4V62h26v-4H60c-.55 0-1.05.22-1.41.58h-.01zM62 26V0h-4v28c0 .55.22 1.05.58 1.41.37.37.86.59 1.41.59H88v-4H62zM18 36c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm16-26a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 58a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 78a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zM34 4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm-8 82a2 2 0 1 1 4 0v2h-4v-2zm0-68a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V18zM66 4a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm0 72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm-48 0a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm0-72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm24-4h4v2a2 2 0 1 1-4 0V0zm0 60a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V60zm14-24c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm-28-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 26a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM36 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-8-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 68a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-34a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-12a2 2 0 1 0 0 4 6 6 0 1 1 0 12 2 2 0 1 0 0 4 10 10 0 1 0 0-20zm-64 0a2 2 0 1 1 0 4 6 6 0 1 0 0 12 2 2 0 1 1 0 4 10 10 0 1 1 0-20zm56-12a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-48 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm24 32a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-4a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm36-36a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM10 44c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm56 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm8 24c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zM3 68c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm0-48c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm71 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm6 66a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM8 86a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-68A6 6 0 1 1 8 2a6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm36 36a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'/%3E%3C/g%3E%3C/svg%3E");
+
+  
+  color: #1e272e;
+  color: #fff;
+  font-size: 16px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+   /* quitamos el style por defecto del UL que son viñetas */
+  list-style: none;
+}
+
+.container {
+  /* un container principal que usara un 90% de su espacio total, y auto margen a los lados */
+  width: 90%;
+  margin: auto;
+}
+
+/* Navigation Principal Estilos */
+.nav-main {
+  font-size: 17px;
+  display: flex;  /* permite se coloquen en linea cada bloque */
+  justify-content: space-between; /* espaciado entre ellos usando todo el ancho */
+  align-items: center; /* alineacion centrada de cada bloque */
+  height: 60px;
+  padding: 20px 0;
+}
+
+.nav-brand {
+  /* reducir tamaño de 1era imagen de navegacion a la izquierda */
+  width: 50px;
+}
+
+/* Navbar Left  se reacomodan AL lado 1era imagen todos uno al lado de otro todos los elementos del UL */
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  /* se logra espaciar cada elemento li de la UL */
+  padding: 10px;
+}
+
+/* LOGRAMOS ESPACIADOS ENTRE LOS ELEMENTOS DE LAS ETIQUETAS A de cada LI de la UL */
+.nav-main ul li a {
+  padding: 2px;
+}
+
+/* SE LOGRA EL EFECTO HOVER EN CADA ETIQUETA (A) y se coloca un subrayado */
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* aqui con flex deje cierto espacio y con left se alinea a la izquierda todos los LI de la UL */
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* modificamos la etiqueta Hr y permitimos aparezca una linea en blanco bajo la navegacion */
+hr {
+  margin: 10px 0;
+}
+
+/* Modifica la clase del Responsive Button para controlar cambios de pantallas */
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  display: none; /* hace que boton menu-btn no se muestre en pantalla normal grande */
+}
+
+
+
+/* la clase BTN JUGAMOS con ella para darle estilo al Boton que sera Menu Hamburguesa */
+.btn {
+  cursor: pointer; /* aparece un puntero nuevo al estar sobre el boton */
+  display: inline-block; /* el boton se vea como un bloque */
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff; /* borde del boton */
+}
+
+/* que hacer con el Boton al realizar Hover sobre el */
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* aqui modificamos el alto, colocamos una imagen de fondo a la clase showcase, ademas hacemos ajustes
+   para que el texto se muestre centrado */
+.showcase {
+  width: 100%;
+  height: 550px;
+  background: url("./img/showcase2.jpg") no-repeat center center/cover; /* ajustar imagen y cubrir su espacio */
+  display: flex; /* de aqui hasta flex-end es para centrar texto y en columnas */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+.showcase .btn {
+  margin-top: 20px;
+}
+
+/* News Cards  aqui van todos los cambios asociados con la clase news-cards, se define como un grid
+   y le indica cuantas veces se repite */
+.news-cards {
+  display: grid; /* uso de CSS GRID */
+  grid-template-columns: repeat(4, 1fr); /* define 4frames para 4 columnas requeridas */
+  gap: 25px; /* espacio entre cada frame o columna */
+  margin: 70px 0;
+}
+
+/* ajuste para las imagenes de la clase news cards OCUPANDO EL 100% de */
+.news-cards img {
+  width: 100%;
+  height: 180px;
+}
+
+/* ajuste para los titulos de la clase news cards */
+.news-cards h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* ajuste para las etiquetas (a) de la clase news cards */
+.news-cards a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+
+/* CARDS BANNER ONE primera Seccion debajo del 1er  CSS GRID */
+.cards-banner-one {
+  width: 100%;
+  height: 350px;
+  background: url("./img/tech-red.jpg"); /* iMAGEN DE FONDO DE TODA LA SECTION ONE */
+  margin-bottom: 40px;
+}
+
+.cards-banner-one .content {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: #fff;
+}
+
+.cards-banner-one p,
+.cards-banner-two p {
+  margin: 10px 0 20px 0;
+}
+
+
+/* CARDS BANNER TWO   Seccion debajo del 2DO  CSS GRID */
+.cards-banner-two {
+  width: 100%;
+  height: 350px; /* iMAGEN DE FONDO DE TODA LA SECTION TWO */
+  background: url("./img/image-five.jpg") no-repeat center center/cover;
+}
+
+.cards-banner-two .content {
+  width: 50%;
+  padding: 100px 0 0 30px;
+}
+
+
+
+/* Follow  ESTILIZAR IMAGENES E INFO DE REDES SOCIALES, usaremos flexbox para hacerlo */
+.social {
+  margin: 50px;
+}
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* con display: flex, align y justify centramos los iconos de rrss */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 30px;
+}
+
+.links a i {
+  font-size: 3rem;
+}
+
+/* Links ESTILIZAR LOS LINKS DEL FOOTER */
+.footer-links {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+/* Links del Footer los centro usando display: grid de CSS GRID, y asi defino 4 columnas
+   una para cada lista  */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* espacio entre cada columna o frame */
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-container ul {
+  margin: 0 auto; /* centramos automaticamente cada lista UL del footer en su columna */
+}
+
+.footer-links li {
+  line-height: 2.8;
+}
+
+.footer {
+  background: #2f3640;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+/* CSS para ajustar ESTILOS APLICANDO media query CUANDO SE CAMBIE A MOBILE o TABLET */
+/* PANTALLAS MEDIAS */
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block; /* permitr se muestre el boton de clase .menu-btn */
+  }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  /* Modificando esta clase para mostrar el Menu Navegacion de manera vertical, con transparencia
+     al hacer clic en el Boton de Menu Hambuerguesa, para pantallas medias y chicas */
+  .nav-main ul.nav-menu {
+    display: block; /* muestre como un bloque */
+    position: absolute; /* Encima de todo se muestra */
+    top: 0;
+    left: 0;
+    background: #2f3640; /* con un fondo */
+    width: 50%; /* ocupe 50% a lo ancho */
+    height: 100%; /* 100% a lo alto ocupe */
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px); /* Provoca que no se vea este menu en pantallas grandes */
+    transition: transform 0.5s ease-in-out; /* efecto del menu al aparecer para que no sea brusco */
+  }
+
+  .nav-main ul.nav-menu li {
+    padding: 20px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+  .nav-main ul.nav-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px); /* este evento Show permite se muestre el menu en pantallas med y sm */
+  }
+
+  .nav-main ul.nav-menu-right {
+    margin-right: 50px;
+  }
+
+  .news-cards {
+    grid-template-columns: repeat(2, 1fr); /* DEFINIMOS 2 COLUMNAS PARA PANTALLAS MEDIAS Y NO 4 */
+  }
+
+  .cards-banner-one .content,
+  .cards-banner-two .content {
+    width: 80%;  /* DEFINIMOS ABARQUE EL 80% DEL ESPACIO */
+  }
+
+  .footer-links .footer-container {
+    grid-template-columns: repeat(2, 1fr); /* DEFINIMOS 2 COLUMNAS PARA PANTALLAS MEDIAS Y NO 4 */
+  }
+}
+
+/* PANTALLAS CHICAS aplicara estos otros estilos y los que esten a 700px que no se modifiquen */
+@media (max-width: 500px) {
+  .news-cards {
+    grid-template-columns: 1fr; /* DEFINIMOS 1 COLUMNA PARA PANTALLAS CHICAS Y NO 4 */
+  }
+
+  .cards-banner-one .content,
+  .cards-banner-two .content {
+    width: 100%;  /* DEFINIMOS ABARQUE EL 100% DEL ESPACIO */
+    padding: 60px 20px;
+  }
+  .footer-links .footer-container {
+    grid-template-columns: 1fr; /* DEFINIMOS 1 COLUMNA PARA PANTALLAS CHICAS Y NO 4 */
+  }
+  
+
+  .footer-links .footer-container ul {
+    text-align: center;
+  }
+}
