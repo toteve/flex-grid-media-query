@@ -9,11 +9,11 @@ document.querySelector(".menu-btn").addEventListener("click", () => {
 });
 
 
-// Uso del ScrollReveal, que ya fue invocado su archivo en el Html como un script y a su vez el Html
-// llama tambien a este main.js
+// Uso del ScrollReveal, que ya fue invocado su archivo en el Html como un script y a su vez 
+// el Html  llama tambien a este main.js
 
-// aqui como parametro de .reveal() colocamos la clase que quiere ser afectada, y en caso de necesitar
-// puede agregar un tiempo de espera como parametro de la funcion para efecto delay
+// aqui como parametro de .reveal() colocamos la clase que quiere ser afectada, y en caso de 
+// necesitar puede agregar un tiempo de espera como parametro de la funcion para efecto delay
 ScrollReveal().reveal('.showcase');
 ScrollReveal().reveal('.news-cards', { delay: 500 });
 ScrollReveal().reveal('.cards-banner-one', { delay: 500 });

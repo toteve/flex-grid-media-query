@@ -64,20 +64,21 @@ ul {
   padding: 10px;
 }
 
-/* LOGRAMOS ESPACIADOS ENTRE LOS ELEMENTOS DE LAS ETIQUETAS A de cada LI de la UL */
+/* LOGRAMOS ESPACIADOS ENTRE LOS ELEMENTOS DE LAS ETIQUETAS <a> de cada LI de la UL */
 .nav-main ul li a {
   padding: 2px;
 }
 
 /* SE LOGRA EL EFECTO HOVER EN CADA ETIQUETA (A) y se coloca un subrayado */
 .nav-main ul li a:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
-/* aqui con flex deje cierto espacio y con left se alinea a la izquierda todos los LI de la UL */
+/* aqui con flex deje cierto espacio y con margin-left se de margen de ese lado a los LI de la UL, con flex 0
+   las opciones del menu no se alinean en una sola linea */
 .nav-main ul.nav-menu {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 /* modificamos la etiqueta Hr y permitimos aparezca una linea en blanco bajo la navegacion */
@@ -85,7 +86,7 @@ hr {
   margin: 10px 0;
 }
 
-/* Modifica la clase del Responsive Button para controlar cambios de pantallas */
+/* Modifica la clase del Responsive Button para controlar cambios de pantallas en Menu Hamburguesa */
 .menu-btn {
   cursor: pointer;
   position: absolute;
@@ -97,7 +98,7 @@ hr {
 
 
 
-/* la clase BTN JUGAMOS con ella para darle estilo al Boton que sera Menu Hamburguesa */
+/* la clase BTN JUGAMOS con ella para darle estilo a todos los botones que usen esta clase */
 .btn {
   cursor: pointer; /* aparece un puntero nuevo al estar sobre el boton */
   display: inline-block; /* el boton se vea como un bloque */
@@ -107,16 +108,15 @@ hr {
   background: #262626;
   color: #fff;
   font-size: 15px;
-  border: 1px solid #fff; /* borde del boton */
+  border: 1px solid white; /* borde del boton */
 }
 
-/* que hacer con el Boton al realizar Hover sobre el */
+/* que hacer con el Boton al realizar Hover sobre todos los botones de esta clase */
 .btn:hover {
   opacity: 0.9;
 }
 
-/* aqui modificamos el alto, colocamos una imagen de fondo a la clase showcase, ademas hacemos ajustes
-   para que el texto se muestre centrado */
+/* aqui modificamos el alto, colocamos una imagen de fondo a la clase showcase, ademas hacemos ajustes para que el texto se muestre centrado */
 .showcase {
   width: 100%;
   height: 550px;
@@ -145,7 +145,7 @@ hr {
 .news-cards {
   display: grid; /* uso de CSS GRID */
   grid-template-columns: repeat(4, 1fr); /* define 4frames para 4 columnas requeridas */
-  gap: 25px; /* espacio entre cada frame o columna */
+  gap: 20px; /* espacio entre cada frame o columna */
   margin: 70px 0;
 }
 
@@ -267,10 +267,11 @@ hr {
 }
 
 /* CSS para ajustar ESTILOS APLICANDO media query CUANDO SE CAMBIE A MOBILE o TABLET */
-/* PANTALLAS MEDIAS */
-@media (max-width: 700px) {
+/* PANTALLAS MEDIAS (<700px y >500px) y chicas(<500px), aqui van todos los ajustes al cambiar tamaño de pantalla */
+@media (max-width: 700px) 
+{
   .menu-btn {
-    display: block; /* permitr se muestre el boton de clase .menu-btn */
+    display: block; /* permitir se muestre el boton de clase .menu-btn */
   }
 
   .menu-btn:hover {
@@ -286,11 +287,11 @@ hr {
     left: 0;
     background: #2f3640; /* con un fondo */
     width: 50%; /* ocupe 50% a lo ancho */
-    height: 100%; /* 100% a lo alto ocupe */
+    height: 60%; /* 60% a lo alto ocupe */
     border-right: #ccc 1px solid;
     opacity: 0.9;
     padding: 30px;
-    transform: translateX(-500px); /* Provoca que no se vea este menu en pantallas grandes */
+    transform: translateX(-500px); /* Provoca que no se vea este menu en pantallas grandes, el -500 por tamaño*/
     transition: transform 0.5s ease-in-out; /* efecto del menu al aparecer para que no sea brusco */
   }
 
@@ -326,7 +327,8 @@ hr {
 }
 
 /* PANTALLAS CHICAS aplicara estos otros estilos y los que esten a 700px que no se modifiquen */
-@media (max-width: 500px) {
+@media (max-width: 500px) 
+{
   .news-cards {
     grid-template-columns: 1fr; /* DEFINIMOS 1 COLUMNA PARA PANTALLAS CHICAS Y NO 4 */
   }

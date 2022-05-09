@@ -8,3 +8,5 @@
 # Resources
 * [Pexels.com](https://www.pexels.com/)
 * [HeroPatterns.com](https://www.heropatterns.com/). Death Start is choosen in this project
+* [main.js](<script src="main.js"></script>)
+* [ScrollReveal](<script src="https://unpkg.com/scrollreveal"></script>)
